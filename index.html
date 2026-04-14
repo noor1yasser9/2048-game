@@ -1,0 +1,34 @@
+<!-- المتطلبات المُنجزة ✅ -->
+
+<!-- 1. العنوان -->
+<h1 class="game__title">2048</h1>
+
+<!-- 2. عداد النقاط (الحالي + الأفضل) -->
+<div class="score-box" id="score-box">
+  <span class="score-box__label">النقاط</span>
+  <span class="score-box__value" id="score">0</span>
+</div>
+<div class="score-box score-box--best" id="best-box">
+  <span class="score-box__label">الأفضل</span>
+  <span class="score-box__value" id="best">0</span>
+</div>
+
+<!-- 3. زر لعبة جديدة -->
+<button class="btn btn--new-game" id="btn-new-game" type="button">
+  لعبة جديدة
+</button>
+
+<!-- 4. لوحة اللعبة 4×4 (طبقتان) -->
+<section class="game__board" id="game-board" role="grid">
+  <!-- Layer 1: خلايا خلفية ثابتة (16 خلية) -->
+  <div class="game__grid" aria-hidden="true">
+    <div class="game__cell" data-row="0" data-col="0"></div>
+    <!-- ... 16 خلية إجمالاً -->
+  </div>
+  <!-- Layer 2: حاوية البلاطات الديناميكية (تُدار بـ JS) -->
+  <div class="tile-container" id="tile-container"></div>
+</section>
+
+<!-- 5. ربط CSS و JS -->
+<link rel="stylesheet" href="css/game.css" />
+<script src="js/game.js"></script>
