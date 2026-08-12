@@ -1,0 +1,1 @@
+R → saveScores({X:0, O:0, draw:0}) + render()
